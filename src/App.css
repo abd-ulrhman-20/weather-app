@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(to right, #3aa2fd, #123a86);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  transition: all .3s ease;
+  height: 20rem;
+
+}
+.card:hover{
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1.5rem;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-group-item {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.my-input-group{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+  gap: 0.4rem;
+  margin: 0 auto;
+  margin-bottom: 2.4rem;
+
+}
+
+.my-input-group-input{
+  padding: .6rem;
+  padding-left: 1rem;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  transition: all .3s ease;
+  border-radius: 2.4rem 0rem 0rem 2.4rem; 
+}
+.my-input-group-input::placeholder {
+  color: #dbdbdb;
+  font-style: italic;
+  opacity: 1; /* Firefox requires this */
+}
+.my-input-group-input:focus{
+  outline: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+.my-btn{
+  width: 25%;
+    background: #3aa2fd3d;
+    font-family: inherit;
+    border: none;
+    color: #fff;
+    padding: .6rem;
+    border-radius: 0rem 2.4rem 2.4rem 0rem; 
+      transition: all .3s ease;
+}
+.my-btn:hover{
+    background: #3aa2fd62;
+}
+.btn-conta{
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 2rem;
+  gap: 1.6rem;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-conta-btn-1{
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow:  3px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  padding: .6rem .8rem;
+  color: #fff;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  font-size: large;
+  transition: all .3s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-conta-btn-1:hover{
+  box-shadow:  8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+}
+.btn-conta-btn-2{
+  border: none;
+    background: #3aa2fd3d;
+  box-shadow:  3px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  padding: .6rem .8rem;
+  color: #fff;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  font-size: large;
+  transition: all .3s ease;
+}
+.btn-conta-btn-2:hover{
+  box-shadow:  8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+    background: #3aa2fd62;
+}
+.Search-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
